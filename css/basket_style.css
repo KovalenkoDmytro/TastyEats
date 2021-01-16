@@ -11,6 +11,7 @@
 body{
     font-family: "Roboto";
     height: 100%;
+    font-size: 22px;
 }
 
 
@@ -30,7 +31,7 @@ header{
 }
 
 .wraper .logo{
-    max-width: 120px;
+    max-width: 150px;
     position: absolute;
     top: 30px;
 }
@@ -67,9 +68,61 @@ section{
     max-width: 1200px;
     border: 2px solid black;
     margin: 0px auto;
+    text-align: center;
 }
 
 .wrapper{
     display: grid;
     grid-template-rows: repeat(5, 1fr);
+    row-gap: 20px;
+}
+
+.wrapper h2 {
+    margin: 20px 0px 20px 0px;
+    border-bottom: 1px solid rgb(134, 134, 134);
+}
+
+.wrapper .adress{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.wrapper .adress .tittle{
+    grid-column: 1/3 ;
+}
+
+.wrapper .adress .labels label{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 5px;
+}
+
+.wrapper .adress .inputs input{
+    display: flex;
+    flex-direction:row;
+    margin: 8px 0px 0px 10px;
+    font-size: 19px;
+    outline: none;
+    border: 1px solid black;
+}
+.wrapper .adress .inputs input:focus{
+    box-shadow:  0 0 10px rgb(48, 161, 33) ;
+    border: none;
+}
+
+.wrapper .adress label{
+    text-align: right;
+}
+
+.wrapper .adress textarea{
+    margin: 8px 0px 0px 10px;
+    width: 45%;
+    font-size: 19px;
+    outline: none;
+}
+
+.wrapper .adress textarea:focus{
+    box-shadow:  0 0 10px rgb(48, 161, 33) ;
+    border: none;
 }
