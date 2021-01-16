@@ -7,6 +7,53 @@
     <title>My basket</title>
 </head>
 <body>
-    
+    <div class="wrapper">
+        
+        <div class="order">
+            <H1>You'r order</H1>
+        </div>
+        
+        <div class="adress">
+            <h2>Drop off address</h2>
+            <input type="text" name="" id="street">
+            <label for="street">Street</label>
+            <input type="text" name="" id="building number">
+            <label for="building number">Building number </label>
+            <input type="text" name="" id="apartment number">
+            <label for="apartment number">Apartment number</label>
+            <input type="tel" name="" id="tel">
+            <label for="tel">Phone Number</label>
+            <textarea name="" id="comment" cols="30" rows="1" style="resize: none;"></textarea>
+            <label for="comment">Comments for delivery</label>
+
+        </div>
+        
+        <div class="promo">
+            <h2>Promotional code</h2>
+            <input type="text" placeholder="Promotional code">
+            <input type="submit" value="" name="Add">
+        </div>
+
+        <div class="payment">
+            <h2>Payment method</h2>
+            <select name="payment" id="">
+                <option value="online">Online</option>
+                <option value="cash">Cash</option>
+                <option value="card">Card</option>
+            </select>
+        </div>
+        
+        <div class="time">
+            <h2>When?</h2>
+            <input type="checkbox" name="" id="asap">
+            <label for="asap">ASAP</label>
+            <input type="datetime-local" name="" id="schedule">
+            <label for="schedule">Schedule</label>
+        </div>
+        <button>Accept</button>
+      
+
+
+    </div>
 </body>
 </html>
