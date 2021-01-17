@@ -73,7 +73,7 @@ section{
 
 .wrapper{
     display: grid;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: 90px 1fr 130px 80px 200px; 
     row-gap: 20px;
 }
 
@@ -126,6 +126,26 @@ section{
     box-shadow:  0 0 10px rgb(48, 161, 33) ;
     border: none;
 }
+
+.wrapper .promo #p_code{
+    margin: 15px 6px 0px 0px;
+    font-size: 19px;
+}
+
+.wrapper .promo #buttom{
+    font-size: 19px;
+    height: 26px;
+    width: 70px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+.wrapper .promo #buttom:hover{
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
+    box-shadow: 0px 0px 16px rgba(11, 129, 7, 0.671);
+}
+
 
 
 /*-----------------------FOOTER--------------------*/
