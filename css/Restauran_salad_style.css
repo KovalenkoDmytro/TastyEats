@@ -24,7 +24,7 @@
     box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
     background-color: white;
     position: relative;
-    z-index: 2;
+    z-index: 4;
   }
   
   /*-----------------------HEADER--------------------*/
@@ -87,7 +87,7 @@
     background-image: url("../img/BG.png");
     background-size: cover;
     position: relative;
-    z-index: 2;
+    z-index: 4;
   }
   
   .pict .whiteblok{
@@ -281,7 +281,7 @@
   }
   
   footer .header .logo img{
-    max-width: 190px;
+    max-width: 160px;
     max-height: 20px;
   }
   
@@ -414,6 +414,14 @@
       padding-left: 8px;
     }
   
+    .wrap #tittle{
+        margin: 28px 0px 24px 16px;
+    }
+    .eats .eat h3{
+        position: static;
+        margin: 15px 0px 3px 16px;
+    }
+
     footer .medium .blok p{
     padding-bottom: 19px;
     margin-top: 15px;
@@ -503,7 +511,6 @@
   
     .pict .whiteblok .boder {
       position: static;
-  
       margin: 11px auto;
       height: 32px;
     }
