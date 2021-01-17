@@ -5,6 +5,47 @@
     <link rel="stylesheet" href="./css/basket_style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My basket</title>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $.widget( "custom.iconselectmenu", $.ui.selectmenu, {
+      _renderItem: function( ul, item ) {
+        var li = $( "<li>" ),
+          wrapper = $( "<div>", { text: item.label } );
+ 
+        if ( item.disabled ) {
+          li.addClass( "ui-state-disabled" );
+        }
+ 
+        $( "<span>", {
+          style: item.element.attr( "data-style" ),
+          "class": "ui-icon " + item.element.attr( "data-class" )
+        })
+          .appendTo( wrapper );
+ 
+        return li.append( wrapper ).appendTo( ul );
+      }
+    });
+ 
+    $( "#filesA" )
+      .iconselectmenu()
+      .iconselectmenu( "menuWidget" )
+        .addClass( "ui-menu-icons" );
+ 
+    $( "#filesB" )
+      .iconselectmenu()
+      .iconselectmenu( "menuWidget" )
+        .addClass( "ui-menu-icons customicons" );
+ 
+    $( "#people" )
+      .iconselectmenu()
+      .iconselectmenu( "menuWidget")
+        .addClass( "ui-menu-icons avatar" );
+  } );
+  </script>
 </head>
 <body>
    
@@ -49,11 +90,13 @@
 
         <div class="payment">
             <h2>Please choose payment method</h2>
-            <select name="payment" id="">
-                <option id="one" value="online">Online</option>
-                <option value="cash">Cash</option>
-                <option value="card">Card</option>
+            <select name="payment" id="people">
+              <option value="online" data-class="avatar" data-style="background-image: url(../img/icons/online.svg);">Online</option>
+              <option value="cash" data-class="avatar" data-style="background-image: url(../img/icons/cash.svg);">Cash</option>
+              <option value="card" data-class="avatar" data-style="background-image: url(../img/icons/credit-card.svg);">Card</option>
             </select>
+
+            
             
         </div>
         
@@ -67,7 +110,7 @@
                 <input type="checkbox" name="" id="asap"><br>
                 <input type="datetime-local" name="" id="schedule">
             </div>
-             
+      
         </div>
       </div>  
         <p><b>Total price</b> - ___:___ $</p>
