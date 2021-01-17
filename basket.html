@@ -50,21 +50,27 @@
         <div class="payment">
             <h2>Please choose payment method</h2>
             <select name="payment" id="">
-                <option value="online">Online</option>
+                <option id="one" value="online">Online</option>
                 <option value="cash">Cash</option>
                 <option value="card">Card</option>
             </select>
+            
         </div>
         
         <div class="time">
             <h2>When?</h2>
-            <input type="checkbox" name="" id="asap">
-            <label for="asap">ASAP</label><br>
-            <label for="schedule">Schedule</label>
-            <input type="datetime-local" name="" id="schedule"> 
+            <div class="blok1">
+                <label for="asap">ASAP</label><br>
+                <label for="schedule">Schedule</label>
+            </div>
+            <div class="blok2">
+                <input type="checkbox" name="" id="asap"><br>
+                <input type="datetime-local" name="" id="schedule">
+            </div>
+             
         </div>
       </div>  
-         <p>total - 40;00 $</p>
+        <p><b>Total price</b> - ___:___ $</p>
         <button>Accept</button>
     </section>  
 
@@ -142,7 +148,8 @@
         </div>
       
       </footer>
-    
-   
+      
+      
+
 </body>
 </html>
