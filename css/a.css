@@ -371,12 +371,9 @@ li{
     left: 8px;
   }
   .wraper input{
-    right: 8px;
+    right: 55px;
   }
   
-  .wraper a{
-    display: none;
-  }
   
   .container{
     display: grid;
