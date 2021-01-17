@@ -401,6 +401,73 @@ left: 0.6em !important;
     }
   
   @media screen and (max-width: 762px){}
+  body{
+    font-size: 17px;
+  }
+  .wrapper{
+    grid-template-rows: 40px 1fr 130px 120px 130px;
+  }
+  .wraper .logo {
+    left: 16px;
+  }
+
+  .wraper input {
+    width: 72px;
+    height: 26px;
+    top: 28px;}
+
+  .wrapper h2{
+    margin: 5px 0px 5px 0px;
+  }
+  .wrapper .adress .inputs input{
+    width: 170px;
+    margin: 8px 8px 0px 10px;
+  } 
+
+  .wrapper .adress .labels label {
+    margin-top: 7px;
+  }
+
+  .wrapper .adress label{
+    margin-top: 7px;
+  }
+
+  .wrapper .adress textarea{
+    width: 170px;
+    margin: 11px 8px 0px 10px;
+  }
+
+  .wrapper .time .blok2 #asap{
+    width: 20px;
+    height: 14px;
+  }
+
+  .time .blok1 label{
+    margin-bottom: 8px;
+  }
+
+  .wrapper .promo #p_code{
+    margin: 15px 6px 15px 0px; 
+  }
+
+  .ui-selectmenu-button{
+    margin-top: 8px;
+  }
+
+  .wrapper .time .blok2 #schedule{
+    font-size: initial;
+  }
+
+  section button {
+    margin: 13px auto;
+    font-size: 16px;
+    min-height: 28px;
+  }
+
+
+
+
+
 
   footer .medium{
     grid-template-columns:  1fr;
