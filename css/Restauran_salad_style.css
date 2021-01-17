@@ -163,7 +163,7 @@
     color: #626262;
   }
   
-  .wrap .menu a:nth-child(2){
+  .wrap .menu a:nth-child(2),.wrap2 .menu a:nth-child(2){
     color: darkgreen;
   
   }
@@ -452,7 +452,26 @@
       margin-bottom: 43px;}
     
   
+    #nav2{
+        height: auto  
+    }
     
+    .wrap2 .menu{    
+        padding-bottom: 7px;
+    }
+
+    .wrap .menu a, .wrap2 .menu a {
+        padding: 15px 10px 15px 10px;
+    }
+    
+    .wrap .menu a:hover, .wrap2 .menu a:hover{
+        transition: 0.5s;
+        transition-timing-function: ease-in-out;
+        box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+    }
+   
+
+
     .pict {
       background-image: url("../img/gb1.png");
       background-size: cover;
@@ -467,7 +486,6 @@
       height: 180px;
       width: 100%;
       text-align: center;
-  
     }
   
     .pict .whiteblok h1 {
@@ -507,7 +525,7 @@
       grid-template-columns: 1fr;
       row-gap: 15px;
     }
-    .wrap .menu{
+    .wrap .menu, .wrap2 .menu {
       flex-flow:wrap
     }
   
@@ -525,12 +543,15 @@
       width: 100%;
     }
   
-    section nav{
+    section nav {
       margin-top: 84px;
       height: 100%;
     }
   
-  
+    .eats .eat h3{
+        position: static;
+        margin: 15px 0px 3px 16px;
+    }
   
     footer .medium{
       grid-template-columns:  1fr;
@@ -539,8 +560,6 @@
     footer .apps {
       margin: 22px 0px 18px 0px;
   }
-  
-  
   
     footer .footercontainer .footergrid{
       grid-template-columns:  1fr;
