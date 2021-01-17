@@ -23,6 +23,8 @@ header{
   height: 100%;
   box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
   background-color: white;
+  position: relative;
+  z-index: 4;
 }
 
 /*-----------------------HEADER--------------------*/
@@ -85,6 +87,7 @@ section{
   background-image: url("../img/BG.png");
   background-size: cover;
   position: relative;
+  z-index: 4;
 }
 
 .pict .whiteblok{
@@ -136,29 +139,31 @@ section{
   height: 100%;
 }
 
-.wrap #tittle{
+.wrap #tittle, .wrap2 #tittle{
   margin: 56px 0px 32px 8px;
 }
 
 nav{
   height: 72px;
   box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+  position: relative;
+  z-index: 2;
+  background-color: #f2f2f2;
 }
 
-.wrap .menu{
+.wrap .menu, .wrap2 .menu{
   display: flex;
   height: 100%;
-
 }
 
-.wrap .menu a{
+.wrap .menu a, .wrap2 .menu a{
   height: 100%;
   padding: 25px 20px 0px 20px;
   text-decoration: none;
   color: #626262;
 }
 
-.wrap .menu a:first-child{
+.wrap .menu a:nth-child(1),.wrap2 .menu a:nth-child(1){
   color: darkgreen;
 
 }
@@ -169,7 +174,26 @@ nav{
   box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
 }
 
+#nav2{
+  z-index: 1;
+  position: fixed;
+  margin: auto;
+  left: 0;
+  right: 0;
+  background-color: #FFFFFF; 
+  height: 72px;
+  box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+}
 
+.wrap2{
+  max-width: 997px;
+  height: 100%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  
+    
+}
 
 .eats{
   display: grid;
@@ -197,6 +221,7 @@ nav{
   float: right;
   width: 170px;
   height: 160px;
+  object-fit:cover
 }
 
 .eats .eat h2{
@@ -257,7 +282,7 @@ footer .header{
 }
 
 footer .header .logo img{
-  max-width: 190px;
+  max-width: 160px;
   max-height: 20px;
 }
 
@@ -390,6 +415,14 @@ li{
     padding-left: 8px;
   }
 
+  .wrap #tittle{
+      margin: 28px 0px 24px 16px;
+  }
+  .eats .eat h3{
+      position: static;
+      margin: 15px 0px 3px 16px;
+  }
+
   footer .medium .blok p{
   padding-bottom: 19px;
   margin-top: 15px;
@@ -428,7 +461,26 @@ li{
     margin-bottom: 43px;}
   
 
+  #nav2{
+      height: auto  
+  }
   
+  .wrap2 .menu{    
+      padding-bottom: 7px;
+  }
+
+  .wrap .menu a, .wrap2 .menu a {
+      padding: 15px 10px 15px 10px;
+  }
+  
+  .wrap .menu a:hover, .wrap2 .menu a:hover{
+      transition: 0.5s;
+      transition-timing-function: ease-in-out;
+      box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+  }
+ 
+
+
   .pict {
     background-image: url("../img/gb1.png");
     background-size: cover;
@@ -443,7 +495,6 @@ li{
     height: 180px;
     width: 100%;
     text-align: center;
-
   }
 
   .pict .whiteblok h1 {
@@ -461,7 +512,6 @@ li{
 
   .pict .whiteblok .boder {
     position: static;
-
     margin: 11px auto;
     height: 32px;
   }
@@ -483,7 +533,7 @@ li{
     grid-template-columns: 1fr;
     row-gap: 15px;
   }
-  .wrap .menu{
+  .wrap .menu, .wrap2 .menu {
     flex-flow:wrap
   }
 
@@ -501,12 +551,15 @@ li{
     width: 100%;
   }
 
-  section nav{
+  section nav {
     margin-top: 84px;
     height: 100%;
   }
 
-
+  .eats .eat h3{
+      position: static;
+      margin: 15px 0px 3px 16px;
+  }
 
   footer .medium{
     grid-template-columns:  1fr;
@@ -515,8 +568,6 @@ li{
   footer .apps {
     margin: 22px 0px 18px 0px;
 }
-
-
 
   footer .footercontainer .footergrid{
     grid-template-columns:  1fr;
@@ -531,8 +582,6 @@ li{
     width: 60px !important;
     height: 60px;
   }
-
- 
 
 }
 

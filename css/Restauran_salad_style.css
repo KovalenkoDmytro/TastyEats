@@ -221,6 +221,7 @@
     float: right;
     width: 170px;
     height: 160px;
+    object-fit: cover;
   }
   
   .eats .eat h2{
@@ -421,6 +422,7 @@
         position: static;
         margin: 15px 0px 3px 16px;
     }
+
 
     footer .medium .blok p{
     padding-bottom: 19px;
