@@ -73,7 +73,7 @@ section{
 
 .wrapper{
     display: grid;
-    grid-template-rows: 90px 1fr 130px 80px 200px; 
+    grid-template-rows: 90px 1fr 130px 120px 200px; 
     row-gap: 20px;
 }
 
@@ -143,10 +143,22 @@ section{
 .wrapper .promo #buttom:hover{
     transition: 0.2s;
     transition-timing-function: ease-in-out;
-    box-shadow: 0px 0px 16px rgba(11, 129, 7, 0.671);
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.329);
 }
 
+.wrapper .promo #buttom:active{
+    background-color: black;
+    color: white;
+}
 
+.wrapper .payment select{
+    width: 100px;
+    height: 25px;
+    outline: none;
+    border: none;
+    background-color: rgb(239, 239, 239);
+
+}
 
 /*-----------------------FOOTER--------------------*/
 
