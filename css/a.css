@@ -77,6 +77,7 @@ header{
 /*-----------------------SECTION--------------------*/
 
 section {
+  display: grid;
   max-width: 997px;
   margin:  0px auto 90px;
   height: 100%;
@@ -91,6 +92,10 @@ section #seach{
   border-bottom: 1px solid #757575;
   margin: 55px 0px 45px 0px;
 }
+
+
+
+
 
 section h1{
   font-size: 22px;
