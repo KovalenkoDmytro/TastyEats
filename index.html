@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TastyEats</title>
  
+ 
 <body>
    
   <header id="top">
@@ -21,8 +22,158 @@
     <input type="text" name="" id="seach" placeholder="What are you craving?">
     
       
-    <div class="icons_slider">dsf</div>
+    	<!-- Swiper -->
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="blok">
+          <a href="#!"><img src="./img/icons/slider/deals.png" alt=""></a>
+        </div>
+        <p>Deals</p>
+      </div>
 
+			<div class="swiper-slide">
+        <div class="blok">
+          <a href="#!"><img src="./img/icons/slider/asian.png" alt=""></a>
+        </div>
+        <p>Asian</p>
+      </div>
+      
+      <div class="swiper-slide">
+        <div class="blok">
+          <a href="#!"><img src="./img/icons/slider/bakery.png" alt=""></a>
+        </div>
+        <p>Bakary</p>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="blok">
+          <a href="#!"><img src="./img/icons/slider/burger.png" alt=""></a>
+        </div>
+        <p>Burgers</p>
+      </div>
+
+			<div class="swiper-slide">
+        <div class="blok">
+          <a href="#!"><img src="./img/icons/slider/coffeeandtea.png" alt=""></a>
+        </div>
+        <p>Coffee and Tea</p>
+      </div>
+    
+      <div class="swiper-slide">
+        <div class="blok">
+          <a href="#!"><img src="./img/icons/slider/american.png" alt=""></a>
+        </div>
+        <p>American</p>
+      </div>
+      
+      <div class="swiper-slide">
+        <div class="blok">
+          <a href="#!"><img src="./img/icons/slider/dessert.png" alt=""></a>
+         </div> 
+        <p>Desserts</p>
+      </div>
+      
+      <div class="swiper-slide">
+        <div class="blok">
+         <a href="#!"><img src="./img/icons/slider/fastfood.png" alt=""></a>
+        </div>
+        <p>Fastfood</p>
+      </div>
+
+			<div class="swiper-slide">
+        <div class="blok">
+          <a href="#!"><img src="./img/icons/slider/icecreamandyogort.png" alt=""></a>
+        </div>  
+        <p>Ice Cream and Froze..</p>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="blok">
+          <a href="#!"><img src="./img/icons/slider/japanese.png" alt=""></a>
+        </div>
+        <p>Japanese</p>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="blok">
+          <a href="#!"><img src="./img/icons/slider/seafood.png" alt=""></a>
+        </div>
+        <p>Seafood</p>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="blok">
+          <a href="#!"><img src="./img/icons/slider/sushi.png" alt=""></a>
+        </div>  
+        <p>Sushi</p>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="blok">
+          <a href="#!"><img src="./img/icons/slider/thai.png" alt=""></a>
+        </div>
+        <p>Thai</p>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="blok">
+          <a href="#!"><img src="./img/icons/slider/sandwich.png" alt=""></a>
+        </div>
+        <p>Sandwich</p>
+      </div>
+
+
+      <div class="swiper-slide">
+        <div class="blok">
+          <a href="#!"><img src="./img/icons/slider/healthy.png" alt=""></a>
+        </div>
+        <p>Healthy</p>
+      </div>
+		</div>
+	</div>
+
+	<!-- Swiper JS -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+	<!-- Initialize Swiper -->
+  <script>
+		var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 11,
+      spaceBetween: 24,
+      scrollbar: {
+        el: '.swiper-scrollbar',
+        hide: true,
+      },
+      
+      breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 4,
+      spaceBetween: 20
+    },
+
+    411: {
+      slidesPerView: 5,
+      spaceBetween: 27
+    },
+
+
+    768: {
+      slidesPerView: 9,
+      spaceBetween: 27
+    },
+
+    1024: {
+      slidesPerView: 15,
+      spaceBetween: 7
+    },
+
+  }
+
+
+    });
+	</script>
 
 
     
