@@ -135,10 +135,9 @@ section .slidermain{
  
 }
 
-
-
-
-
+.swiper-container_advertising {
+  display: none;
+}
 
 
 
@@ -451,13 +450,10 @@ li{
   }
 
   section .advertising{
-    column-gap: 19px;
+    column-gap: 33px;
   }
 
-  section .advertising img{
-    width: 279px;
-    height: 161px;
-  }
+  
 
   section .advertising_txt h1{
     margin-bottom: 9px;
@@ -470,6 +466,20 @@ li{
   .swiper-container_advertising {
     display: none;
   }
+
+  .single-item{
+    margin: 0px ;
+    width: 460px;
+  }
+  
+  .single-item img{
+    width: 227px;
+    padding: 0px 7px;
+    height: 140px;
+   
+  }
+
+
 
   .container img{
     width: 100%;
