@@ -8,6 +8,10 @@
     padding: 0;
     margin: 0;
 }
+a:focus{
+  background: #ffffff00;
+}
+
 html{
   box-sizing: border-box;
 }
