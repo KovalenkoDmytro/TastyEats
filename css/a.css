@@ -4,7 +4,6 @@
 }
 
 
-
 * {box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -56,7 +55,6 @@ header{
   border: 0.5px solid grey;
   border-radius: 16px;
   background: #FFFFFF;
-
 }
 
 .wraper input:hover{
@@ -117,11 +115,9 @@ section .advertising_txt p{
   color: white;
 }
 
-
 section .slidermain{
   position: relative;
 }
-
 
 .single-item{
   margin: 0px ;
@@ -132,41 +128,11 @@ section .slidermain{
   width: 300px;
   padding: 0px 5px;
   height: 149px;
- 
 }
 
 .swiper-container_advertising {
   display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*---------------swiper-----------*/
@@ -195,11 +161,7 @@ section .slidermain{
 .swiper-slide .blok:hover{
   border-radius: 50%;
   background-color: rgba(100, 100, 114, 0.24);
-
-
 }
-
-
 
 .swiper-slide img{
   width: 60px;
@@ -209,14 +171,9 @@ section .slidermain{
 .swiper-slide p{
   text-align: center;
   font-weight: bold;
-  font-size: 12px;}
-
-
-
-
+  font-size: 12px;
+}
 /*---------------swiper end-----------*/
-
-
 
 section h1{
   font-size: 31px;
@@ -273,8 +230,6 @@ section h1{
 .container .small_container{
   margin-top: 16px;
 }
-
-
 
 .container  #type{
   font-size: 14px;
@@ -380,14 +335,11 @@ footer .medium .blok select {
   border: none;
   color: #FFFFFF;
   padding-left: 36px;
-
-
 }
 
 footer .medium .blok select{
   border: none;
   box-shadow: none;
-  
 }
 
 footer .medium .blok p{
@@ -426,9 +378,6 @@ li{
 }
 
 
-
-
-
 @media screen and (max-width: 968px) {
   .wraper input, .wraper a{
     left: auto;}
@@ -453,8 +402,6 @@ li{
     column-gap: 33px;
   }
 
-  
-
   section .advertising_txt h1{
     margin-bottom: 9px;
   }
@@ -476,10 +423,7 @@ li{
     width: 227px;
     padding: 0px 7px;
     height: 140px;
-   
   }
-
-
 
   .container img{
     width: 100%;
@@ -532,8 +476,6 @@ li{
   .advertising_txt , .slidermain{
     display: none;
   }
-  
-  
 
   :root {
     --swiper-theme-color: #007aff
@@ -609,8 +551,6 @@ li{
     transform: translateX(-50%);
     white-space: nowrap
   }
-
-  
 }
 
 
@@ -622,8 +562,7 @@ li{
   .wraper input{
     right: 55px;
   }
-  
-  
+
   .container{
     display: grid;
     grid-template-columns:  1fr; 
@@ -641,13 +580,9 @@ li{
     display: none;
   }
 
-
   section .advertising{
     display: block;
   }
- 
- 
-  
 
   section h1{
     font-size: 24px;
@@ -677,8 +612,6 @@ li{
     width: 60px !important;
     height: 60px;
   }
-
-
 
 }
 
