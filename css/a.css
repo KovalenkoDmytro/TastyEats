@@ -498,7 +498,16 @@ li{
     margin: 29px 0px 18px 0px;
   }
 
+  .advertising_txt , .advertising_pic2 , .advertising_pic1{
+    display: none;
+  }
 
+
+  section .advertising{
+    display: block;
+  }
+ 
+  
 
   section h1{
     font-size: 24px;
