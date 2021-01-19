@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="./css/a.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
   <title>TastyEats</title>
  
  
@@ -21,75 +23,96 @@
   <section>
     <input type="text" name="" id="seach" placeholder="What are you craving?">
     
-    
     <div class="advertising">
-    
-      <div class="swiper-container_advertising">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <a href=""><img src="./img/advertising1.webp" alt=""></a>
-          </div>
-          <div class="swiper-slide">
-            <a href=""><img src="./img/Screenshot_5.jpg" alt=""></a>
-          </div>
-          <div class="swiper-slide">
-            <a href=""><img src="./img/advertising3.webp" alt=""></a>
-          </div>
-          <div class="swiper-slide">
-            <a href=""><img src="./img/advertising4.webp" alt=""></a>
-          </div>
-          <div class="swiper-slide">
-            <a href=""><img src="./img/advertising5.webp" alt=""></a>
-          </div>
-          <div class="swiper-slide">
-            <a href=""><img src="./img/advertising6.webp" alt=""></a>
-          </div>
-          <div class="swiper-slide">
-            <a href=""><img src="./img/advertising7.webp" alt=""></a>
-          </div>
-          <div class="swiper-slide">
-            <a href=""><img src="./img/advertising8.webp" alt=""></a>
-          </div>
-
-        </div>
-
-        
-
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-      
-    
-      
-        <!-- Swiper JS advertising -->
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    
-        <!-- Initialize Swiper  advertising-->
-        <script>
-        var swiper = new Swiper('.swiper-container_advertising', {
-          speed:2000, 
-          autoplay: {
-            delay: 3000,
-          },
-          pagination: {
-            el: '.swiper-pagination',
-          },
-        });
-        </script>
-
-       </div>
 
       <div class="advertising_txt">
         <h1>Crave it? Get it.</h1>
         <p>Search for a favorite restaurant, cuisine, or dish.</p>
       </div>
+
+
+    
+    
+        <div class="swiper-container_advertising">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href=""><img src="./img/advertising1.webp" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+              <a href=""><img src="./img/Screenshot_5.jpg" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+              <a href=""><img src="./img/advertising3.webp" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+              <a href=""><img src="./img/advertising4.webp" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+              <a href=""><img src="./img/advertising5.webp" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+              <a href=""><img src="./img/advertising6.webp" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+              <a href=""><img src="./img/advertising7.webp" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+              <a href=""><img src="./img/advertising8.webp" alt=""></a>
+            </div>
+  
+          </div>
+  
+          
+  
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        
       
-      <div class="advertising_pic1">
-        <a href=""><img src="./img/advertising1.webp" alt=""></a>
+        
+          <!-- Swiper JS advertising -->
+          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      
+          <!-- Initialize Swiper  advertising-->
+          <script>
+          var swiper = new Swiper('.swiper-container_advertising', {
+            speed:2000, 
+            autoplay: {
+              delay: 3000,
+            },
+            pagination: {
+              el: '.swiper-pagination',
+            },
+          });
+          </script>
+  
+         </div>
+
+
+
+      <div class="slidermain">
+
+        <div class="slider single-item">
+          <div><img src="./img/advertising1.webp" alt=""></div>
+          <div><img src="./img/advertising3.webp" alt=""></div>
+          <div><img src="./img/advertising4.webp" alt=""></div>
+          <div><img src="./img/advertising5.webp" alt=""></div>
+          <div><img src="./img/advertising6.webp" alt=""></div>
+          <div><img src="./img/advertising7.webp" alt=""></div>
+        </div>
+
+
+        
       </div>
 
-      <div class="advertising_pic2">
-        <a href=""><img src="./img/Screenshot_5.jpg" alt=""></a>
-      </div>
+
+
+
+
+
+
+
+
+
 
 
     </div>
@@ -425,6 +448,11 @@
       </div>
     </div>
   
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="slick/slick.min.js"></script>
+	<script src="js/main.js"></script>
+
   </footer>
 
 
