@@ -99,7 +99,7 @@ section .advertising{
   display: grid;
   align-content: center;
   grid-template-columns: 1fr 2fr;
-  column-gap: 20px;
+  column-gap: 33px;
   margin-bottom: 20px;
   position: relative;
 }
@@ -118,23 +118,22 @@ section .advertising_txt p{
 }
 
 
-section .slider{
-  border: 2px solid yellow;
+section .slidermain{
+  position: relative;
 }
 
 
+.single-item{
+  margin: 0px ;
+  width: 600px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.single-item img{
+  width: 300px;
+  padding: 0px 5px;
+  height: 149px;
+ 
+}
 
 
 
@@ -520,10 +519,12 @@ li{
 }
 
 @media screen and (max-width: 767px) {
-  .advertising_txt , .advertising_pic2 , .advertising_pic1{
+  .advertising_txt , .slidermain{
     display: none;
   }
   
+  
+
   :root {
     --swiper-theme-color: #007aff
   }
