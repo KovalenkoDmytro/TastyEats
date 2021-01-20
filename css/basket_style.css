@@ -400,7 +400,7 @@ left: 0.6em !important;
       bottom: 60px;
     }
   
-  @media screen and (max-width: 762px){}
+  @media screen and (max-width: 762px){
   body{
     font-size: 17px;
   }
@@ -464,11 +464,6 @@ left: 0.6em !important;
     min-height: 28px;
   }
 
-
-
-
-
-
   footer .medium{
     grid-template-columns:  1fr;
   }
@@ -490,7 +485,7 @@ left: 0.6em !important;
     width: 60px !important;
     height: 60px;
   }
-
+}
   @media screen and (prefers-reduced-motion: no-preference) {
     html,
     body {
