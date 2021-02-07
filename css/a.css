@@ -1,17 +1,25 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @font-face {
   font-family: 'Roboto';
   src:url("../fonts/TextLight.otf")  format("opentype");
 }
 
 
-* {box-sizing: border-box;
+* {-webkit-box-sizing: border-box;box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
 
 html{
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body{
@@ -23,7 +31,8 @@ body{
 
 header{
   height: 100%;
-  box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+  -webkit-box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+          box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
 }
 
 /*-----------------------HEADER--------------------*/
@@ -60,7 +69,8 @@ header{
 }
 
 .wraper input:hover{
-  box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+  -webkit-box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+          box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
 }
 
 .wraper input:active{
@@ -77,6 +87,7 @@ header{
 /*-----------------------SECTION--------------------*/
 
 section {
+  display: -ms-grid;
   display: grid;
   max-width: 997px;
   margin:  0px auto 90px;
@@ -96,10 +107,15 @@ section #seach{
 section .advertising{
   height: 200px;
   background: #262626;
+  display: -ms-grid;
   display: grid;
-  align-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-grid-columns: 1fr 33px 2fr;
   grid-template-columns: 1fr 2fr;
-  column-gap: 33px;
+  -webkit-column-gap: 33px;
+     -moz-column-gap: 33px;
+          column-gap: 33px;
   margin-bottom: 20px;
   position: relative;
 }
@@ -149,13 +165,22 @@ section .slidermain{
 .swiper-wrapper {
 	position: relative;
 	z-index: 1;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-transition-property: -webkit-transform;
+	transition-property: -webkit-transform;
+	-o-transition-property: transform;
 	transition-property: transform;
-	box-sizing: content-box
+	transition-property: transform, -webkit-transform;
+	-webkit-box-sizing: content-box;
+	        box-sizing: content-box
 }
 
 .swiper-container-free-mode>.swiper-wrapper {
-	transition-timing-function: ease-out;
+	-webkit-transition-timing-function: ease-out;
+	     -o-transition-timing-function: ease-out;
+	        transition-timing-function: ease-out;
 	margin: 0 auto
 }
 
@@ -197,6 +222,8 @@ section h1{
 }
 
 .big_container img{
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
 }
 
@@ -223,7 +250,9 @@ section h1{
 /*-----------------------CONTAINER--------------------*/
 
 .container{
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   margin-left: 8px;
@@ -267,6 +296,7 @@ footer a:hover{
 
 
 footer {
+  -ms-grid-rows: (1fr)[4];
   grid-template-rows: repeat(4, 1fr);
   background: #262626;
   color: white;
@@ -288,7 +318,9 @@ footer .header .logo img{
 }
 
 footer .medium {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 40px 1fr 40px 1fr;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 40px;
 }
@@ -318,7 +350,9 @@ footer .medium {
 }
 
 .blok1{
+  display: -ms-grid;
   display: grid;
+  -ms-grid-rows: (1fr)[3];
   grid-template-rows: repeat(3, 1fr);
 }
 
@@ -341,7 +375,8 @@ footer .medium .blok select {
 
 footer .medium .blok select{
   border: none;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 footer .medium .blok p{
@@ -364,9 +399,13 @@ footer .medium .blok #img{
 }
 
 footer .footercontainer .footergrid{
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 40px 1fr 40px 1fr;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 40px;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
   margin: 40px 0px 0px 0px;
   padding-bottom: 40px;
 }
@@ -401,7 +440,9 @@ li{
   }
 
   section .advertising{
-    column-gap: 33px;
+    -webkit-column-gap: 33px;
+       -moz-column-gap: 33px;
+            column-gap: 33px;
   }
 
   section .advertising_txt h1{
@@ -438,7 +479,9 @@ li{
   }
 
   .container{
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
     margin-right: 8px;
   }
@@ -498,18 +541,30 @@ li{
     width: 100%;
     height: 100%;
     z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
     transition-property: transform;
-    box-sizing: content-box;
+    transition-property: transform, -webkit-transform;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
   }
   
   
   .swiper-container_advertising .swiper-slide {
-    flex-shrink: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     width: 100%;
     height: 100%;
     position: relative;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
     transition-property: transform;
+    transition-property: transform, -webkit-transform;
   }
   
   .swiper-container_advertising .swiper-slide img{
@@ -520,8 +575,11 @@ li{
   .swiper-pagination {
     position: absolute;
     text-align: center;
+    -webkit-transition: .3s opacity;
+    -o-transition: .3s opacity;
     transition: .3s opacity;
-    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
     z-index: 10
   }
   
@@ -550,7 +608,9 @@ li{
   }
   .swiper-container-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     white-space: nowrap
   }
 }
@@ -566,7 +626,9 @@ li{
   }
 
   .container{
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns:  1fr;
     grid-template-columns:  1fr; 
   }
 
@@ -592,6 +654,7 @@ li{
   }
 
   footer .medium{
+    -ms-grid-columns:  1fr;
     grid-template-columns:  1fr;
     row-gap: 20px;
   }
@@ -601,6 +664,7 @@ li{
 }
 
   footer .footercontainer .footergrid{
+    -ms-grid-columns:  1fr;
     grid-template-columns:  1fr;
     row-gap: 30px;
   }
